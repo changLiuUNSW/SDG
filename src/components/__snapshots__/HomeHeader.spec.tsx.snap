@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the component correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "marginBottom": 24,
+        "paddingHorizontal": 16,
+        "paddingTop": 40,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#ffff",
+          "fontSize": 28,
+        },
+      ]
+    }
+  >
+    17 GOALS TO 
+    
+
+    TRANSFER OUR WORLD
+  </Text>
+</View>
+`;

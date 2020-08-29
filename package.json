@@ -1,0 +1,106 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "start": "react-native start",
+    "check-types": "tsc --noEmit",
+    "test": "jest",
+    "test-watch": "jest --watchAll",
+    "lint": "eslint -c .eslintrc.json --max-warnings=0 src/**/*.{ts,tsx}",
+    "validate": "npm run lint && npm run check-types"
+  },
+  "dependencies": {
+    "expo": "~38.0.9",
+    "expo-splash-screen": "^0.5.0",
+    "expo-status-bar": "^1.0.0",
+    "expo-updates": "~0.2.8",
+    "expo-constants": "^9.1.1",
+    "expo-asset": "^8.1.7",
+    "react": "~16.11.0",
+    "react-native": "~0.62.2",
+    "react-native-unimodules": "~0.10.0",
+    "react-native-web": "~0.11.7",
+    "react-navigation": "^4.4.0",
+    "react-navigation-stack": "^2.8.2",
+    "react-native-gesture-handler": "^1.7.0",
+    "react-native-reanimated": "^1.13.0",
+    "react-native-safe-area-context": "^3.1.7",
+    "react-native-screens": "^2.10.1",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "reselect": "^4.0.0",
+    "redux-observable": "^1.0.0",
+    "styled-components": "^4.2.0",
+    "typesafe-actions": "^3.1.0",
+    "rxjs": "^6.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^24.0.13",
+    "@types/react": "~16.9.23",
+    "@types/react-dom": "~16.9.8",
+    "@types/react-native": "~0.61.23",
+    "@types/react-redux": "^7.0.1",
+    "@types/redux-immutable-state-invariant": "^2.1.1",
+    "@types/styled-components": "4.1.18",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "babel-preset-expo": "~8.2.0",
+    "detox": "^17.4.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "eslint-plugin-simple-import-sort": "^5.0.2",
+    "jest": "^26.4.2",
+    "jest-circus": "^26.4.2",
+    "jest-expo": "~38.0.0",
+    "prettier": "^1.19.1",
+    "react-dom": "^16.11.0",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "~3.8.3"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "setupFiles": [
+      "./src/setup.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|@sentry|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|sentry-expo|native-base)"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.ts?(x)",
+      "**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": {
+          "jsx": "react"
+        }
+      }
+    }
+  },
+  "private": true
+}

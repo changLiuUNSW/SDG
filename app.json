@@ -1,0 +1,12 @@
+{
+  "name": "sdg",
+  "displayName": "sdg",
+  "expo": {
+    "name": "sdg",
+    "slug": "sdg",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

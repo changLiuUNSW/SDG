@@ -1,0 +1,112 @@
+{
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true,
+      "jest": true,
+      "jasmine": true,
+      "react-native/react-native": true
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    },
+    "globals": {
+      "window": true,
+      "__DEV__": true
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "react",
+      "prettier",
+      "react-hooks",
+      "import",
+      "react-native",
+      "simple-import-sort"
+    ],
+    "extends": [
+      "plugin:react/recommended",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+      "react/display-name": "off",
+      "arrow-parens": ["error", "as-needed"],
+      "block-spacing": "error",
+      "brace-style": "error",
+      "eol-last": "error",
+      "guard-for-in": "error",
+      "import/order": "off",
+      "sort-imports": "off",
+      "jsx-quotes": ["error", "prefer-double"],
+      "quotes": ["error", "single", { "avoidEscape": true }],
+      "no-console": "warn",
+      "no-bitwise": "warn",
+      "no-eval": "error",
+      "no-multiple-empty-lines": "error",
+      "no-multi-spaces": "error",
+      "no-trailing-spaces": "error",
+      "no-var": "error",
+      "object-curly-spacing": ["error", "always"],
+      "padded-blocks": ["error", { "blocks": "never" }],
+      "prefer-const": "error",
+      "spaced-comment": "error",
+      "dot-notation": "error",
+      "no-unused-expressions": "error",
+      "curly": "error",
+      "no-async-promise-executor": "error",
+      "no-await-in-loop": "warn",
+      "no-misleading-character-class": "error",
+      "no-template-curly-in-string": "error",
+      "no-unused-vars": "off",
+      "react/prop-types": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react-native/no-unused-styles": "error",
+      "react-native/split-platform-components": "off",
+      "react-native/no-inline-styles": "off",
+      "react-native/no-color-literals": "off",
+      "react-native/no-raw-text": "off",
+      "react-native/no-single-element-style-arrays": "error",
+      "prettier/prettier": "error",
+      "react/no-unescaped-entities": "off",
+      "simple-import-sort/sort": "error"
+    },
+    "overrides": [
+      {
+        "files": ["**/*.ts?(x)"],
+        "rules": {
+          "@typescript-eslint/consistent-type-definitions": "error",
+          "@typescript-eslint/explicit-function-return-type": "off",
+          "@typescript-eslint/no-explicit-any": "off",
+          "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+              "argsIgnorePattern": "^_",
+              "ignoreRestSiblings": true,
+              "args": "after-used"
+            }
+          ],
+          "@typescript-eslint/prefer-function-type": "error",
+          "@typescript-eslint/class-name-casing": "error",
+          "@typescript-eslint/interface-name-prefix": "error",
+          "@typescript-eslint/no-empty-interface": "error",
+          "@typescript-eslint/type-annotation-spacing": "error",
+          "@typescript-eslint/no-this-alias": [
+            "error",
+            {
+              "allowDestructuring": true
+            }
+          ],
+          "@typescript-eslint/semi": "error"
+        }
+      }
+    ]
+  }
+  
