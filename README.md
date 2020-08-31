@@ -14,6 +14,7 @@ The following tools are required.
 
 | Tools                                                                                          | Version  | Extra info                    |
 | ---------------------------------------------------------------------------------------------- | -------- | ----------------------------- |
+| Yarn                                                                                          | 1.22+   |                               |
 | XCode                                                                                          | 10.1+    |                               |
 | Android Studio                                                                                 | 3.5.0+   |                               |
 | Visual Studio Code                                                                             | 1.32.3+  |                               |
@@ -25,34 +26,34 @@ The following tools are required.
 ### Running on iOS locally
 
 ```bash
- # Install required npm dependencies
- npm install
+ # Install required dependencies
+ yarn install
  # Install pods
  cd ios
  pod install
  # go back to the root folder
  # run ios
  cd ..
- npm run ios
+ yarn ios
 ```
 
 ### Running on Android Locally
 
 ```bash
-npm install
+yarn install
 # connect your android device then run android
-npm run android
+yarn android
 
 # if you get build errors try clean and rebuild
 pushd android & ./gradlew clean & popd
-npm run android
+yarn android
 ```
 
 ### Run Linter
 
 ```bash
-npm install
-npm run validate
+yarn install
+yarn validate
 ```
 
 
@@ -61,8 +62,8 @@ npm run validate
 ### Unit test
 
 ```bash
-npm install
-npm run test
+yarn install
+yarn test
 ```
 
 ### E2E test (IOS only)
@@ -79,7 +80,7 @@ https://github.com/wix/AppleSimulatorUtils
 
 ```bash
 
-npm install
+yarn install
 detox build --configuration ios
 detox test --configuration ios
 ```
